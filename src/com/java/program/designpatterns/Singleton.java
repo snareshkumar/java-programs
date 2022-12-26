@@ -2,27 +2,33 @@ package com.java.program.designpatterns;
 
 public class Singleton {
 
-    private static Singleton obj = null;
-
-    private Singleton() {
-
-    }
-
-    public static Singleton getInstance() {
-
-        if (obj == null) {
-            return new Singleton();
-        }
-        return obj;
-
-    }
-
     public static void main(String[] args) {
 
-        Singleton object = getInstance();
+        SingletonInstance obj = SingletonInstance.getSingletonInstance();
 
-        Singleton o = new Singleton();
+        System.out.println("Singleton object created from the pattern " + obj);
 
+    }
+
+}
+
+class SingletonInstance {
+
+    private static SingletonInstance singletonInstance = null;
+
+    private SingletonInstance() {
+
+    }
+
+    public static SingletonInstance getSingletonInstance() {
+
+        if (null == singletonInstance) {
+            synchronized (SingletonInstance.class) {
+                return new SingletonInstance();
+            }
+        } else {
+            return singletonInstance;
+        }
     }
 
 }
