@@ -1,3 +1,10 @@
 bin/com/java/program/designpatterns/Singleton.class
 bin/com/java/program/designpatterns/SingletonInstance.class
 bin/com/java/program/strings/StringCombination.class
+bin/com/java/program/designpatterns/Bank.class
+bin/com/java/program/designpatterns/FactoryCreator.class
+bin/com/java/program/designpatterns/FactoryPattern.class
+bin/com/java/program/designpatterns/HDFC.class
+bin/com/java/program/designpatterns/IDBI.class
+bin/com/java/program/designpatterns/SBI.class
+bin/com/java/program/streams/FindMissingLeastPositiveNumberInArray.class
